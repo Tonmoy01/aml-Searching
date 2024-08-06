@@ -1,5 +1,5 @@
 import { useState } from "react";
-import CircularProgressBar from "./CircleProgressbar";
+import CircularProgressBar from "./CircleProgressBar";
 
 const Loading = () => {
   const [progress, setProgress] = useState(75);

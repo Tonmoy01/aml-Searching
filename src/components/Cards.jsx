@@ -18,15 +18,13 @@ const Cards = () => {
   ];
 
   return (
-    <div className="flex gap-4">
+    <div className="flex flex-col gap-4 md:flex-row">
       {cardData.map(item => (
-        <div key={item.id} className="w-full p-8 bg-white shadow-md rounded-3xl md:w-1/3">
+        <div key={item.id} className="flex-1 p-8 bg-white shadow-md rounded-3xl">
           <div className="flex flex-col gap-4">
-            <div className="flex flex-col gap-8">
-              <span className="text-lg font-bold text-black underline font-sarala text-[46px]">{item.id}</span>
-              <span className="text-sm font-bold text-black font-sarala text-[24px]">{item.title}:</span>
-              <p className="text-[#333] text-lg font-jakarta">{item.description}</p>
-            </div>
+            <span className="text-[46px] font-bold text-black underline font-sarala">{item.id}</span>
+            <span className="text-[24px] font-bold text-black font-sarala">{item.title}:</span>
+            <p className="text-lg text-[#333] font-jakarta">{item.description}</p>
           </div>
         </div>
       ))}
